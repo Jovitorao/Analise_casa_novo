@@ -1,0 +1,28 @@
+[project]
+name = "analise-casa"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "jovitorao",email = "soaresdeoliveira772@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=3.0.3,<4.0.0)",
+    "numpy (>=2.4.6,<3.0.0)",
+    "plotly-express (>=0.4.1,<0.5.0)",
+    "plotly (>=6.8.0,<7.0.0)",
+    "ipywidgets (>=7.5)"
+]
+
+[tool.poetry]
+packages = [{include = "analise_casa", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.2.0,<8.0.0)"
+]
