@@ -1,0 +1,12 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:poetry",
+    "python-envs.defaultPackageManager": "ms-python.python:poetry",
+    "editor.codeActionWidget.includeNearbyQuickFixes": true,
+    "editor.inlineSuggest.enabled": false,
+    "editor.quickSuggestions": {
+
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    }
+}
