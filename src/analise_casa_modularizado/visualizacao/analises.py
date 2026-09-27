@@ -55,22 +55,22 @@ def grafico_top_5_bairros(media_preco_bairro):
     title ='Top 5 bairros com maiores preços médios'
 )
     fig_top5.update_yaxes(type = 'category')
-    return fig_top5.show()
+    return fig_top5
 
 def outlier(df):
         df_outlier= df.copy()
         fig_outlier = px.box(df_outlier, title = 'Distribuição de Preços com Outliers' , points = 'outliers' )
-        return fig_outlier.show()
+        return fig_outlier
 
 def histograma(df):
      df_hist= df.copy()
      fig_hist = px.histogram(df_hist, title= 'Distribuição de Preços com Outliers', points ='outliers')
-     return fig_hist.show()
+     return fig_hist
 
 def area_e_preco(df):
      df_area_preco = df.copy()
      fig_area_preco = px.scatter(df_area_preco,x="m2_area_habitavel", y="preco", title="Relação preço por área")
-     return fig_area_preco.show()
+     return fig_area_preco
 
 def evolucao_temporal(df):
      df_temporal = df.copy()
@@ -82,4 +82,4 @@ def evolucao_temporal(df):
      title='Evolução do Preço ao Longo do Tempo',
      labels={'data_formatada': 'Período (Ano-Mês)', 'preco': 'Preço ($)'})
      fig_preco.update_xaxes(type= 'category')
-     return fig_preco.show()
+     return fig_preco
