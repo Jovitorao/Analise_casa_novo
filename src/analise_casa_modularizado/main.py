@@ -6,7 +6,7 @@ from features.engenharia import criar_features
 df = carregar_dados('Housing.csv')
 df = converter_tipos(df)
 df = traduzir(df)
-df = colunas_ano_mes(df)      # cria 'ano' e 'mes' — necessário para as features
+df = colunas_ano_mes(df)     
 df = criar_features(df)
 
 print(media_anual(df))
